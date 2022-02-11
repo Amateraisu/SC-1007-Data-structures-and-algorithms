@@ -1,0 +1,24 @@
+1a) struct person personP // it is NOT allowed to have an instance of the struct inside the structure, however, a pointer is allowed.
+b) (*studentPtr).InfoPtr->age // studentPtr->Infoptr -> age // (*studentPtr).Info.age // studentPtr->Info.age 
+C) (*studentPtrPtr)->InfoPtr -> age // *(*studentPtrPtr)).InfoPtr->age // *(*studentPtrPtr)).Info.age 
+
+2) 
+int insertNode(ListNode** ptrHead, int i, int item)
+{
+    ListNode* cur;
+    ListNode* newNode;
+
+    if (*ptrHead == NULL || i==0)
+    {
+        ListNode*newNode = (ListNode*)malloc(sizeof(ListNode));
+        newNode->item = item;
+        newNode->next = *ptrHead;
+        *ptrHead= newNode;
+        return 1;
+    }
+
+    else 
+    {
+        return insertNode(&((*ptrHead)->next),--i,item);
+    }
+}

@@ -1,0 +1,9 @@
+Main things are: 
+
+Sorting a linked list
+deleting a node
+inserting it at the beginning of the list 
+inserting a node at the end of the list 
+inserting a node at the nth of a list
+print a linked list in front
+print a linked list in reverse using iterative / reverse
