@@ -110,13 +110,13 @@ char peek(Stack s)
     return s.head->item;
 }
 
-int isEmptyStack(Stack s)
-{
-    if (s.size == 0)
-        return 1;
-    else
-        return 0;
-}
+// int isEmptyStack(Stack s)
+// {
+//     if (s.size == 0)
+//         return 1;
+//     else
+//         return 0;
+// }
 
 void deleteStack(Stack *sPtr)
 {
@@ -243,4 +243,12 @@ int balanced(char *expression)
     {
         return 1;
     }
+}
+
+int isEmptyStack(Stack s)
+{
+    if (s.size == 0)
+        return 1;
+    else
+        return 0;
 }

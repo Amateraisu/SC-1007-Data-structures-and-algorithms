@@ -149,6 +149,8 @@ void in2Pre(char *infix, char *prefix)
     infix_reversed[i] = '\0';
     i = 0;
 
+    // THIS IS WHERE IT MATTERS
+
     while (infix_reversed[i] != '\0')
     {
 
